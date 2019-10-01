@@ -1,4 +1,4 @@
-export default (stats, fromDate = "", toDate = "") => {
+export default async (stats, fromDate = "", toDate = "") => {
   if(!fromDate.trim() || !toDate.trim()){
     return stats
   }

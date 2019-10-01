@@ -12,8 +12,11 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js ",
-    "unit-test": "jest test/unit-test --watch"
+    "build": "npm run clean && babel -d ./build ./src -s",
+    "start": "nodemon --exec babel-node src/index.js --watch",
+    "unit-test": "jest test/unit-test --watch",
+    "e2e-test": "jest test/e2e-test",
+    "clean": "rm -rf build && mkdir build"
   },
   "author": "Edizon",
   "license": "ISC",

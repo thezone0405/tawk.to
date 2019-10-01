@@ -1,7 +1,8 @@
-'use strict'
 import express from 'express'
 const app = express()
 
-//app.use( '/test', theModule )
+import chatStatistics from '../services/chat-statistics'
+
+app.use( '/chat', chatStatistics )
 
 export default app

@@ -1,4 +1,4 @@
-export default (stats) => {
+export default async (stats) => {
   let grouped = {}
   stats.map((stat)=>{
     if(!grouped[stat.websiteId]){

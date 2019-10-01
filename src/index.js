@@ -10,7 +10,7 @@ const serverUp = ( app ) => {
 		console.log( 'Unhandled Rejection at: Promise ', p, reason )
 	)
 	server.on( 'listening', () =>
-  console.log( 'Application started on http://%s:%d', '192.168.99.100',  3030 )
+    console.log( 'Application started on http://%s:%d', '192.168.99.100',  3030 )
 	)
 }
 
