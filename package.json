@@ -1,0 +1,51 @@
+{
+  "name": "tawk.to",
+  "version": "1.0.0",
+  "description": "Test for tawk.to",
+  "main": "src",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js ",
+    "unit-test": "jest test/unit-test --watch"
+  },
+  "author": "Edizon",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-cli": "^6.26.0",
+    "core-js": "^3.2.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-source-map-support": "^2.0.1",
+    "nodemon": "^1.19.3"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "test",
+      "config"
+    ],
+    "transform": {
+      ".js": "<rootDir>/node_modules/babel-jest"
+    },
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  }
+}
